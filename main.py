@@ -13,11 +13,7 @@ if st.button("predict"):
     st.success(f"Estimated Daily Water Usage: {total} liters")
  
    fig, ax = plt.subplots()
-
    ax.bar(["water usage"], [total])
-
    ax.set_ylabel("liters")
-
    ax.set_title("hostel daily water usage")
-
    st.pyplot(fig)
