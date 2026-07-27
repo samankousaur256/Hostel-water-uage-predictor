@@ -11,9 +11,8 @@ water_per_student = st.number_input("water usage per student (liters)", min_valu
 if st.button("predict"):
     total = students * water_per_student
     st.success(f"Estimated Daily Water Usage: {total} liters")
- 
-   fig, ax = plt.subplots()
-   ax.bar(["water usage"], [total])
-   ax.set_ylabel("liters")
-   ax.set_title("hostel daily water usage")
-   st.pyplot(fig)
+     fig, ax = plt.subplots()
+     ax.bar(["water usage"], [total])
+     ax.set_ylabel("liters")
+     ax.set_title("hostel daily water usage")
+     st.pyplot(fig)
