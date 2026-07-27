@@ -9,5 +9,5 @@ water_per_student = st.number_input("water usage per student (liters)", min_valu
 
 if st.button("predict"):
   total = students * water_per_student
-  st.success(f"Estimated Daily Water Usage: {Total}
- liters")
+  st.success(f"Estimated Daily Water Usage: {Total} liters")
+ 
