@@ -1,4 +1,5 @@
 import streamlit as st
+import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Hostel Water Usage Predictor")
 
@@ -11,3 +12,8 @@ if st.button("predict"):
   total = students * water_per_student
   st.success(f"Estimated Daily Water Usage: {total} liters")
  
+ fig, ax = plt.subplots()
+ ax.bar(["water usage"], [total])
+ ax.set_ylabel("liters")
+ ax.set_title("hostel daily water usage")
+st.pyplot(fig)
