@@ -10,9 +10,10 @@ if st.button("predict"):
    total = students * water_Per_student
 
    st.success(f"Estimated daily water usage:{total} liters")
+  
    fig, ax = plt.subplots()
    
-    ax.bar(["water usage"],[total])
+    ax.bar(["water usage"], [total])
     ax.set_ylabel("liters")
     ax.set_title("hostel daily water usage")
     st.pyplot(Fig)
