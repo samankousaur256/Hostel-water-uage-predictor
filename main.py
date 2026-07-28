@@ -16,7 +16,7 @@ if st.button("predict"):
 
    fig, ax = plt.subplots(figsize=(6, 4))
 
-   ax.bar(["water usage"], [predicted_value], colour="green")
+   ax.bar(["water usage"], [predicted_value], color="green")
   
    ax.set_ylabel("liters")
    ax.set_title("predicted water usage")
